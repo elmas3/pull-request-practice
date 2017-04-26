@@ -22,7 +22,9 @@
 
 Git初心者のわかばちゃんと一緒に、楽しくGitをマスターしましょう！
 
-## わかばちゃんシリーズ
+<a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">試し読みはこちらからどうぞ</a>
+
+## 他にもある！わかばちゃんシリーズ
 
 <a href="http://www.amazon.co.jp/dp/4863541945" target="_blank"><img class="aligncenter size-large wp-image-480" src="http://webdesign-manga.com/wp-content/uploads/2016/06/image-721x1024.jpeg" alt="image" width="546" height="775" /></a>
 
@@ -31,14 +33,14 @@ Git初心者のわかばちゃんと一緒に、楽しくGitをマスターし�
 出版社:シーアンドアール研究所
 
 - プロローグ/キャラクター紹介/キャラクターの関係図/はじめに
-- CHAPTER 1 企画~どんなサイトになるかは企画で決まる!~
-- CHAPTER 2 デザイン~企画に合ったデザインをしよう!~
-- CHAPTER 3 HTML~文章や画像を貼り付けて、Webサイトの中身を作ろう!~
-- CHAPTER 4 CSS~その見た目、華やかにしてあげる!~
-- CHAPTER 5 JavaScript~まるで魔法? 動きを付けるのじゃ~
-- CHAPTER 6 PHP~できることの幅がグーンと広がる言語~
-- CHAPTER 7 公開~ついにWeb上に公開だ!~
-- CHAPTER 8 運用~Webサイトは公開してからが本番~
+- CHAPTER 1 企画 〜どんなサイトになるかは企画で決まる!
+- CHAPTER 2 デザイン 〜企画に合ったデザインをしよう!
+- CHAPTER 3 HTML 〜文章や画像を貼り付けて、Webサイトの中身を作ろう!
+- CHAPTER 4 CSS 〜その見た目、華やかにしてあげる!
+- CHAPTER 5 JavaScript　〜まるで魔法? 動きを付けるのじゃ
+- CHAPTER 6 PHP 〜できることの幅がグーンと広がる言語
+- CHAPTER 7 公開 〜ついにWeb上に公開だ!
+- CHAPTER 8 運用 〜Webサイトは公開してからが本番
 - エピローグ/おわり
 
 4コママンガでHTML/CSSがわかる！
