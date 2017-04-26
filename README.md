@@ -24,6 +24,8 @@ Git初心者のわかばちゃんと一緒に、楽しくGitをマスターし�
 
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">試し読みはこちらからどうぞ</a>
 
+<img src="https://pbs.twimg.com/media/C-E-okEUwAA9ILA.jpg" width="150px">
+
 ## 他にもある！わかばちゃんシリーズ
 
 <a href="http://www.amazon.co.jp/dp/4863541945" target="_blank"><img class="aligncenter size-large wp-image-480" src="http://webdesign-manga.com/wp-content/uploads/2016/06/image-721x1024.jpeg" alt="image" width="546" height="775" /></a>
@@ -50,3 +52,5 @@ SEOの考え方、GoogleAnalyticsの使い方も解説。
 わかばちゃんはHTMLちゃんたちと仲良くなれるのでしょうか？
 
 <a href="http://www.amazon.co.jp/dp/4863541945" target="_blank">試し読みはこちらからどうぞ</a>
+
+<img src="https://pbs.twimg.com/media/C9RNDPIVwAAXAAu.jpg" width="150px">
