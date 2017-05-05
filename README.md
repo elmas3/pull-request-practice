@@ -4,7 +4,7 @@
 
 ## 対応書籍
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">
-<img class="alignnone size-medium wp-image-846" src="http://webdesign-manga.com/wp-content/uploads/2017/03/C4XnLc6UoAAJNrS-212x300.jpg" alt="わかばちゃんと学ぶGit使い方入門" width="212" height="300" /></a>
+<img src="http://webdesign-manga.com/wp-content/uploads/2017/03/C4XnLc6UoAAJNrS-212x300.jpg" alt="わかばちゃんと学ぶGit使い方入門" width="200" /></a>
 
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">「わかばちゃんと学ぶGitの使い方入門」</a>
 
@@ -28,7 +28,7 @@ Git初心者のわかばちゃんと一緒に、楽しくGitをマスターし�
 
 ## 他にもある！わかばちゃんシリーズ
 
-<a href="http://www.amazon.co.jp/dp/4863541945" target="_blank"><img class="aligncenter size-large wp-image-480" src="http://webdesign-manga.com/wp-content/uploads/2016/06/image-721x1024.jpeg" alt="image" width="546" height="775" /></a>
+<a href="http://www.amazon.co.jp/dp/4863541945" target="_blank"><img class="aligncenter size-large wp-image-480" src="http://webdesign-manga.com/wp-content/uploads/2016/06/image-721x1024.jpeg" alt="わかばちゃんと学ぶWebサイト制作の基本" width="200" /></a>
 
 <a href="http://www.amazon.co.jp/dp/4863541945" target="_blank">「わかばちゃんと学ぶWebサイト制作の基本」 </a>
 
