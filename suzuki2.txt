@@ -1,0 +1,1 @@
+compare & pull requestのボタンの表示を確認したい
