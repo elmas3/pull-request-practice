@@ -5,9 +5,7 @@
 ## 「Compare & pull request」のボタンが見当たらない場合
 「わかばちゃんと学ぶGit使い方入門」の読者様より、**GitHub上で「Compare & pull request」ボタンが見当たらない**という事例を報告いただきました。
 
-どうやらタイミングによって「Compare & pull request」ボタンが表示されないことがあるようです。
-
-以下のブログに、「Compare & pull request」のボタンを使わないGitHub上でのプルリクの出し方をまとめましたので、参考にしていただけますと幸いです。
+どうやらタイミングによって表示されないことがあるようです。以下のブログに、対応方法をまとめましたので参考にしていただけますと幸いです。
 
 [GitHub上でプルリクを出す方法：「Compare & pull request」のボタンが見当たらない場合 ](http://webdesign-manga.com/post-919/)
 
