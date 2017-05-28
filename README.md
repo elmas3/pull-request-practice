@@ -2,6 +2,14 @@
 プルリクエスト練習用リポジトリです。
 自由にforkしてプルリクを送ってください。マージします。
 
+## 「Compare & pull request」のボタンが見当たらない場合
+「わかばちゃんと学ぶGit使い方入門」の読者様より、**GitHub上で「Compare & pull request」ボタンが見当たらない**という事例を報告いただきました。
+
+どうやらタイミングによって表示されないことがあるようです。以下のブログに、対応方法をまとめましたので参考にしていただけますと幸いです。
+
+[GitHub上でプルリクを出す方法：「Compare & pull request」のボタンが見当たらない場合 ](http://webdesign-manga.com/post-919/)
+
+
 ## 対応書籍
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">
 <img src="http://webdesign-manga.com/wp-content/uploads/2017/03/C4XnLc6UoAAJNrS-212x300.jpg" alt="わかばちゃんと学ぶGit使い方入門" width="200" /></a>
