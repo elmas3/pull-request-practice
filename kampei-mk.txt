@@ -1,3 +1,6 @@
 リクエスト前の追加・修正
 for TEST
-pull request 
+pull Request 
+
+リクエスト後に追加修正してプッシュしてみる
+
