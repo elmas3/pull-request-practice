@@ -1,2 +1,3 @@
-for test
+リクエスト前の追加・修正
+for TEST
 pull request 
