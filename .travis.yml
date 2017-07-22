@@ -10,7 +10,6 @@ script:
 
 - git checkout master || exit
 - git merge "$TRAVIS_COMMIT" || exit
-- git commit -m 'Update'
 - '[ "$TRAVIS_BRANCH" == "master" ]'
 - '[ $GH_TOKEN ]'
 - 'git push --force https://$GH_TOKEN@github.com/elmas3/pull-request-practice.git HEAD:gh-pages'
