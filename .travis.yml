@@ -5,10 +5,6 @@ before_script:
 - git config --global user.email 'elmas3@users.noreply.github.com '
 
 script:
-if [ "$TRAVIS_BRANCH" != "test" ]; then 
-    exit 0;
-fi
-
 - export GIT_COMMITTER_NAME=elmas3-via-TravisCI
 - export GIT_COMMITTER_EMAIL=elmas3@users.noreply.github.com 
 
