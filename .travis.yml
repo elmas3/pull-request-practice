@@ -9,7 +9,7 @@ script:
 - export GIT_COMMITTER_EMAIL=elmas3@users.noreply.github.com 
 
 - git checkout master || exit
-- git merge "$TRAVIS_PULL_REQUEST_BRANCH" || exit
+- git merge "$TRAVIS_COMMIT" || exit
 - '[ "$TRAVIS_BRANCH" == "master" ]'
 - '[ $GH_TOKEN ]'
 - 'git push --force https://$GH_TOKEN@github.com/elmas3/pull-request-practice.git HEAD:gh-pages'
