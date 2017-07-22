@@ -1,26 +1,19 @@
 branches:
-
-if [ "$TRAVIS_BRANCH" != "test" ]; then 
-    exit 0;
-fi
-
-export GIT_COMMITTER_NAME=elmas3-via-TravisCI
-export GIT_COMMITTER_EMAIL=elmas3@users.noreply.github.com 
-
-git checkout master || exit
-git merge "$TRAVIS_COMMIT" || exit
   
 before_script:
 - git config --global user.name 'elmas3 via Travis CI'
 - git config --global user.email 'elmas3@users.noreply.github.com '
-- rm -rf public
-- git clone --depth=1 --branch=gh-pages https://github.com/elmas3/pull-request-practice.git public
-- pushd public
-- git ls-files | xargs -I {} rm -rf {}
-- popd
 
 script:
-- git add -A
+if [ "$TRAVIS_BRANCH" != "test" ]; then 
+    exit 0;
+fi
+
+- export GIT_COMMITTER_NAME=elmas3-via-TravisCI
+- export GIT_COMMITTER_EMAIL=elmas3@users.noreply.github.com 
+
+- git checkout master || exit
+- git merge "$TRAVIS_COMMIT" || exit
 - git commit -m 'Update'
 - '[ "$TRAVIS_BRANCH" == "master" ]'
 - '[ $GH_TOKEN ]'
