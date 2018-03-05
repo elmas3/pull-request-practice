@@ -2,6 +2,11 @@
 プルリクエスト練習用リポジトリです。
 自由にforkしてプルリクを送ってください。マージします。
 
+## 自動マージについて🌱
+プルリクを作ったら、右メニューの「label」からピンク色の`MeargeCat`を選択してください。
+自動でマージされます🙌
+<a href="https://gyazo.com/416761e05663436b57875d579b6c3405"><img src="https://i.gyazo.com/416761e05663436b57875d579b6c3405.gif" alt="https://gyazo.com/416761e05663436b57875d579b6c3405" width="960"/></a>
+
 ## 「Compare & pull request」のボタンが見当たらない場合
 「わかばちゃんと学ぶGit使い方入門」の読者様より、**GitHub上で「Compare & pull request」ボタンが見当たらない**という事例を報告いただきました。
 
