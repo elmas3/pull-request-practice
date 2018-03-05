@@ -1,22 +1,8 @@
 
 language: bash
 
-before_script:
-#!/bin/bash
-OWNER=elmas3
-REPO=pull-request-practice
-# CI で設定される NUMBER を環境変数からとる
-NUMBER=1
-LABEL=MergeCat
-# GITHUB_TOKEN に token をセットしてあるものとする
-
-curl -XPOST \
-  -d "[\"$LABEL\"]" \
-  -H 'Accept: application/vnd.github.v3+json' \
-  -H "Authorization: token $GITHUB_TOKEN" \
-  https://api.github.com/repos/$OWNER/$REPO/pulls/$NUMBER/labels
-
 script: true
+
 after_success: ./merge.sh $GIT_USER $GIT_PASS
 
 env:
