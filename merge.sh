@@ -8,6 +8,20 @@ fi
 GIT_USER="$1"
 GIT_PASS="$2"
 
+# Label
+OWNER=elmas3
+REPO=pull-request-practice
+# CI で設定される NUMBER を環境変数からとる
+NUMBER=1
+LABEL=MergeCat
+# GITHUB_TOKEN に token をセットしてあるものとする
+
+curl -XPOST \
+  -d "[\"$LABEL\"]" \
+  -H 'Accept: application/vnd.github.v3+json' \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$NUMBER/labels
+
 # Specify the development branch and stable branch names
 FROM_BRANCH="dev"
 TO_BRANCH="stable"
