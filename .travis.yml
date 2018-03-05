@@ -4,7 +4,7 @@ language: bash
 script: true
 
 after_success:
-  #!/bin/bash
+#!/bin/bash
 OWNER=elmas3
 REPO=pull-request-practice
 # CI で設定される NUMBER を環境変数からとる
