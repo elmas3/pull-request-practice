@@ -1,5 +1,0 @@
-木檜(こぐれ)です。
-
-湊川さんの執筆したCodeIQの記事を使ってinit/add/commit/clone/pushまでの一連の流れが分かりました。ありがとうございます！
-
-https://codeiq.jp/magazine/category/git-ai/
