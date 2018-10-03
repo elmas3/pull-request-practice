@@ -1,1 +1,2 @@
-# 自分用の練習ファイルを作りました。by abe
+# 閾ｪ蛻�逕ｨ縺ｮ邱ｴ鄙偵ヵ繧｡繧､繝ｫ繧剃ｽ懊ｊ縺ｾ縺励◆縲Ｃy abe
+% This is the inappropriate comment style. Error
