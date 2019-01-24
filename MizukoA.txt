@@ -1,1 +1,0 @@
-GitとGitHubとSourceTreeの練習です！
