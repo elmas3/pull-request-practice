@@ -1,1 +1,2 @@
 自分専用のテキストファイルです。
+Just learning to make a Pull Request.
