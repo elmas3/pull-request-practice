@@ -8,6 +8,7 @@
 # --------------------------------------
 
 .DS_Store
+malu9402.txt
 
 # --------------------------------------
 # Windows.gitignore
@@ -91,4 +92,3 @@ dw_php_codehinting.config
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
