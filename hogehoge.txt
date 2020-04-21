@@ -1,2 +1,3 @@
 ﻿ほげほげ
 GithubとSourceTreeのチュートリアル
+DjangoのチュートリアルはDjango Girlsがおすすめ
