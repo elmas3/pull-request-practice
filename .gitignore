@@ -13,6 +13,9 @@
 # Windows.gitignore
 # --------------------------------------
 
+# Exclude about page
+about.html
+
 # Windows thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable
