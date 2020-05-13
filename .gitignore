@@ -92,3 +92,10 @@ dw_php_codehinting.config
 !.vscode/launch.json
 !.vscode/extensions.json
 
+#---------------------------------------
+# Vim Backup Files
+# --------------------------------------
+*.txt~
+*.txt.un~
+*.un~
+*.*~
