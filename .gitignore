@@ -19,6 +19,9 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+# 私の恥ずかしい自分メモ（ポエム）
+mosopoem.txt
+
 # Dump file
 *.stackdump
 
