@@ -1,2 +1,3 @@
 自分用のテキストファイルを作りました。
 Pullrequest trial 20200913
+Pullrequest trial 20200913 for blog
