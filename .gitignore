@@ -94,3 +94,4 @@ dw_php_codehinting.config
 !.vscode/launch.json
 !.vscode/extensions.json
 
+Thumbs.db
