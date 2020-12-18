@@ -47,9 +47,9 @@ jobs:
     steps:
       - uses: reitermarkus/automerge@v1
         with:
-          token: ${{ secrets.MY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           merge-method: rebase
           do-not-merge-labels: never-merge
           required-labels: automerge
           pull-request: ${{ github.event.inputs.pull-request }}
-          dry-run: true
+          dry-run: false
