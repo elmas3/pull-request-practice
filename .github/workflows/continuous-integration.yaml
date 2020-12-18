@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: reitermarkus/automerge@v1
-        with:s
+        with:
           token: ${{ secrets.MY_GITHUB_TOKEN }}
           merge-method: rebase
           do-not-merge-labels: never-merge
