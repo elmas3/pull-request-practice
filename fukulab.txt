@@ -1,0 +1,2 @@
+プルリクエストの練習です。
+Practice for pull request.
