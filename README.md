@@ -27,7 +27,7 @@
 ## 本リポジトリ対応書籍
 
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">
-<img src="http://webdesign-manga.com/wp-content/uploads/2017/03/C4XnLc6UoAAJNrS-212x300.jpg" alt="わかばちゃんと学ぶGit使い方入門" width="200" /></a>
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102519.jpg" alt="Git使い方入門" title="" class="hatena-fotolife" itemprop="image"></a>
 
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">「わかばちゃんと学ぶGitの使い方入門」</a>
 
@@ -47,16 +47,13 @@ Git初心者のわかばちゃんと一緒に、楽しくGitをマスターし�
 
 <a href="https://www.amazon.co.jp/dp/4863542178" target="_blank">試し読みはこちらからどうぞ</a>
 
-<img src="https://pbs.twimg.com/media/C-E-okEUwAA9ILA.jpg" width="150px">
-
 ## わかばちゃんが登場する書籍いろいろ
 <div>
 <a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102514.jpg" alt="f:id:itstaffing:20210113102514j:plain" title="" class="hatena-fotolife" itemprop="image"></a>  <a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102516.jpg" alt="f:id:itstaffing:20210113102516j:plain" title="" class="hatena-fotolife" itemprop="image"></a>
 </div>
-<div> </div>
 <div>
-<a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102519.jpg" alt="f:id:itstaffing:20210113102519j:plain" title="" class="hatena-fotolife" itemprop="image"></a>  <a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102521.jpg" alt="f:id:itstaffing:20210113102521j:plain" title="" class="hatena-fotolife" itemprop="image"></a>
+<a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/i/itstaffing/20210113/20210113102521.jpg" alt="f:id:itstaffing:20210113102521j:plain" title="" class="hatena-fotolife" itemprop="image"></a>
 </div>
 <p><br><a href="https://www.amazon.co.jp/%25E6%25B9%258A%25E5%25B7%259D-%25E3%2581%2582%25E3%2581%2584/e/B01N8OK2UW/ref=as_li_ss_tl?ref=sr_ntt_srch_lnk_3&amp;qid=1610016874&amp;sr=1-3&amp;linkCode=sl2&amp;tag=cam51p-22&amp;linkId=73efcb142907befc72b01944554f21dd&amp;language=ja_JP" style="color: #0095c2;" target="_blank">わかばちゃんと学ぶシリーズ（Amazonページ）</a></p>
 
-
+<img src="https://pbs.twimg.com/media/C-E-okEUwAA9ILA.jpg" width="150px">
