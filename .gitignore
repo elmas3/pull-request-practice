@@ -1,5 +1,7 @@
 .DS_Store
 Thumbs.db
+.sass-cache/
+*.css.map
 test.txt
 Takahashi.txt
 bluetortoise.txt
