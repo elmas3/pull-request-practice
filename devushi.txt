@@ -1,3 +1,0 @@
-Created testfile for myself.
-
-Modified Commit Test
