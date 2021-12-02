@@ -1,2 +1,3 @@
 thank you wakaba chan manga.
 add this line.
+テスト：ローカルリポジトリのパスを移動させても問題ない？
