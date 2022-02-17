@@ -1,1 +1,21 @@
 自分用のテキストファイルを作りました。
+
+# SECTION14 - GitHub上でプルリクエストを作成する　(1)で「Compare」の表示がない
+以下、もし同じところで困った人がいたら参考に。
+
+
+メモ：自分が試したときの場合
+1. 「Fetch upstream」-> 「Compare」に変わってる。
+
+2. "This branch is not behind the upstream elmas3:master."で「Compare」が押せない。
+`「Compare & pull request」のボタンが見当たらない場合`のリンクが切れていたので、  
+Web Archiveを使って参考ページを確認
+
+http://web.archive.org/web/20190506173723/https://webdesign-manga.com/post-919/
+
+
+3. 参考ページ記載のトップページに「New pull request」のボタンがなかったので、
+  Pull requestsのページ（タブ）から「New pull request」を実行。
+
+4. SECTION14 - GitHub上でプルリクエストを作成する　(2)の比較ページになりました。
+
