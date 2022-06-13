@@ -41,7 +41,7 @@ img {
 
 /* header */
 
-.header-wrapper {
+.header .header-wrapper {
   padding: 25px 15px;
   background-color: #fff;
   display: flex;
@@ -50,24 +50,24 @@ img {
   height: 60px;
 }
 
-.header-wrapper a img {
+.header a img {
   width: 100px;
   height: 20px;
   margin-left: 125px;
 }
 
-.header-wrapper ul {
+.header nav ul {
   padding-left: 50px;
   display: flex;
   margin-right: 100px;
 }
 
-nav li {
+.header nav li {
   padding: 8px 10px;
   margin-right: 10px;
 }
 
-nav li:last-child {
+.header nav li:last-child {
   border-radius: 10px;
   background-color: orange;
   color: #fff;
@@ -98,32 +98,32 @@ nav li:last-child {
   flex-direction: column;
 }
 
-.ask-title img {
+.ask .ask-title {
   height: 150px;
   padding-bottom: 40px;
 }
 
-.ask-info {
+.ask .ask-info {
   text-align: center;
   padding-bottom: 40px;
   margin-top: 50px;
 }
 
-.ask-info .ask-br {
+.ask .ask-info .ask-br {
   display: none;
 }
 
-.ask-list {
+.ask .ask-list {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 40px;
 }
 
-.ask-list li {
+.ask .ask-list li {
   padding-bottom: 7px;
 }
 
-.ask-btn {
+.ask .ask-btn {
   padding: 10px 56px;
 }
 
@@ -136,7 +136,7 @@ nav li:last-child {
   padding-bottom: 30px;
 }
 
-.feature-mass {
+.feature .feature-mass {
   display: flex;
   justify-content: space-between;
 }
@@ -154,18 +154,14 @@ nav li:last-child {
   margin-right: 10%;
 }
 
-.feature-sentence {
-  /* width: ; */
-}
-
-.feature-img {
+.feature .feature-mass .feature-img {
   width: 200px;
   height: 200px;
   margin: 0 auto 15px auto;
 
 }
 
-.feature-mass .feature-detail h3 {
+.feature .feature-mass h3 {
   text-align: center;
   margin-bottom: 15px;
 }
@@ -181,18 +177,95 @@ nav li:last-child {
   background-size: cover;
 }
 
-.thought-mass {
+.thought .thought-mass {
   width: 600px;
   height: 475px;
   margin: 0 auto 0 auto;
 }
 
-.thought-sentence:not(:last-child) {
+.thought .thought-mass .thought-sentence:not(:last-child) {
   margin-bottom: 65px;
 }
 
 
 
+/* curriculum */
+.curriculum {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.curriculum .common-subtitle {
+  font-size: 28px;
+  /* 「align-items: center」と「justify-content: center」を使うために */
+  display: flex;
+  /* 線を上下の真ん中に */
+  align-items: center;
+  /* 線を左右の真ん中に */
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.curriculum .common-subtitle::before {
+  border-top: 1px solid;
+  /* contentの初期設定(表示にはコンテントが必ず必要)*/
+  content: "";
+  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
+  flex-grow: 1;
+  margin-right: 1em;
+  color: #dcdcdc;
+}
+
+.curriculum .common-subtitle::after {
+  border-top: 1px solid;
+  /* contentの初期設定(表示にはコンテントが必ず必要)*/
+  content: "";
+  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
+  flex-grow: 1;
+  margin-left: 1em;
+  color: #dcdcdc;
+}
+
+.curriculum .recommend-mass .recommend-collection {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.curriculum .recommend-mass .recommend-img {
+  width: 31.5%;
+}
+
+.curriculum .recommend-mass p {
+  font-size: 23px;
+  text-align: center;
+}
+
+.curriculum .language-mass .language-collection {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.curriculum .language-mass .language-img {
+  width: 31.5%;
+}
+
+.curriculum .language-mass img {
+  width: 142px;
+  height: 200px;
+}
+
+/* .curriculum .language-mass img {
+  width: 142px;
+  height: 200px;
+} */
+
+/* .curriculum .language-mass p {
+  text-align: center;
+} */
 
 /* 1280で「headerのnavがおかしくなる」 */
 /* スクロールしてハンバーガーメニューに変わるのはjQueryが必要 */
