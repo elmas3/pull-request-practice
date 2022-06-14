@@ -256,6 +256,9 @@ img {
 .curriculum .language-mass img {
   width: 142px;
   height: 200px;
+  /* 画像を要素の真ん中に */
+  margin-left: 27%;
+  margin-bottom: 20px;
 }
 
 /* .curriculum .language-mass img {
