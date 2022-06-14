@@ -6,7 +6,6 @@ body {
   /* 初期値を０に */
   margin: 0;
   font-size: 14px;
-  font-family: KozGoPr6N;
   width: 100%;
 }
 
@@ -76,7 +75,11 @@ img {
   font-weight: bold;
 }
 
-
+/* hamburger-menu */
+#menu-btn-check,
+.hamburger-menu ul {
+  display: none;
+}
 
 
 /* ask */
@@ -294,6 +297,7 @@ img {
 }
 
 .course .course-detail h5 {
+  display: inline-block;
   padding: 5px;
   font-size: 24px;
   background-color: orange;
@@ -363,14 +367,140 @@ img {
     /* 全体を真ん中に */
     margin: 0 auto;
   }
+
+
+  /* ハンバーガーメニュー */
+  .menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 40px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #fff;
+  }
+
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  #menu-btn-check:checked~.menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  #menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+
+  #menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  #menu-btn-check {
+    display: none;
+  }
+
+  .menu-content {
+    width: 70%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #fff;
+    transition: all 0.5s;
+  }
+
+  .menu-content ul {
+    padding: 70px 10px 0;
+  }
+
+  .menu-content ul li {
+    border-bottom: solid 1px black;
+    list-style: none;
+    padding: 3px;
+  }
+
+  .menu-content ul li:last-child {
+    border-radius: 15px;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px;
+  }
+
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+  }
+
+  .menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px black;
+    border-right: solid 2px black;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+  }
+
+  #menu-btn-check:checked~.menu-content {
+    left: 0;
+  }
 }
 
+@media (max-width:1000px) {
 
+  /* .course-wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .course .course-mass {
+    display: block;
+  }
+
+  .course .course-detail {
+    width: 100%;
+    height: 170px;
+  }
+
+  .course .course-content p {
+    word-wrap: break-word;
+  } */
+}
 
 /* ここから文の改行等を入れる */
 @media (max-width:850px) {
-
-
 
   /* 全体 */
   .wrapper {
@@ -388,13 +518,14 @@ img {
     margin-left: 10px;
   }
 
-  .header-wrapper ul {
-    padding-left: 50px;
-    display: flex;
-    margin-right: 10px;
+  .header-wrapper nav {
+    display: none;
   }
 
-
+  .menu-content {
+    width: 70%;
+    height: 50%;
+  }
 
   /* ask */
   /* 画像を中心から取り出す */
