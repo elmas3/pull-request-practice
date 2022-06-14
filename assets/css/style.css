@@ -6,6 +6,7 @@ body {
   /* 初期値を０に */
   margin: 0;
   font-size: 14px;
+  font-family: KozGoPr6N;
   width: 100%;
 }
 
@@ -261,14 +262,96 @@ img {
   margin-bottom: 20px;
 }
 
-/* .curriculum .language-mass img {
-  width: 142px;
-  height: 200px;
-} */
 
-/* .curriculum .language-mass p {
-  text-align: center;
-} */
+
+/* course */
+
+.course {
+  background-image: url(../img/section4-bg.jpg);
+  padding-bottom: 70px;
+}
+
+.course-wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.course .course-mass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course .course-detail {
+  height: 255px;
+  width: 480px;
+  /* margin-bottom: 25px; */
+}
+
+.course .course-detail .course-margin {
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+  color: #fff;
+}
+
+.course .course-detail h5 {
+  padding: 5px;
+  font-size: 24px;
+  background-color: orange;
+}
+
+.course .course-detail p {
+  line-height: 1.38;
+}
+
+.course .course-detail p span {
+  font-size: 24px;
+  color: orange;
+}
+
+.course .detail-paid {
+  background-image: url(../img/section4-1.png);
+  background-size: cover;
+}
+
+.course .detail-free {
+  background-image: url(../img/section4-2.png);
+  background-size: cover;
+}
+
+.course-white {
+  background-color: #fff;
+}
+
+.course .course-content {
+  width: 480px;
+  height: 150px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  padding: 20px 10px 10px 10px;
+}
+
+.line {
+  margin: 20px;
+}
+
+.line:empty {
+  border-top: solid 1px;
+  content: "";
+  flex-grow: 1;
+  margin-right: 1em;
+  color: #dcdcdc;
+}
+
+.course .course-application p {
+  font-weight: bold;
+  padding: 10px 10px 10px 20px;
+}
+
+.course .course-application ul {
+  line-height: 1.79;
+  padding: 10px 10px 10px 20px;
+}
+
 
 /* 1280で「headerのnavがおかしくなる」 */
 /* スクロールしてハンバーガーメニューに変わるのはjQueryが必要 */
