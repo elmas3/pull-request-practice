@@ -1,17 +1,13 @@
 @charset "UTF-8";
 
 /* 全体・共通部分 */
-
 body {
-  /* 初期値を０に */
   margin: 0;
   font-size: 14px;
-  width: 100%;
 }
 
 .wrapper {
   max-width: 1440px;
-  /* 全体を真ん中に */
   margin: 0 auto;
 }
 
@@ -19,7 +15,7 @@ img {
   width: 100%;
 }
 
-.btn {
+.button {
   background-color: orange;
   color: #fff;
   font-weight: bold;
@@ -39,7 +35,6 @@ img {
 
 
 /* header */
-
 .header .header-wrapper {
   padding: 25px 15px;
   background-color: #fff;
@@ -70,65 +65,63 @@ img {
   border-radius: 10px;
   background-color: orange;
   color: #fff;
-  /* margin-right: 125px; */
   font-weight: bold;
 }
 
 /* hamburger-menu */
-#menu-btn-check,
+#menu-button-check,
 .hamburger-menu ul {
   display: none;
 }
 
 
-/* ask */
-
-.ask {
+/* first-view */
+.first-view .container {
   background-image: url(../img/first-view.jpg);
-  /* 自動的にボックスに合わせた大きさにし絵切り出す */
   background-size: cover;
   height: 600px;
   color: #fff;
-  /* 下記を記述することで高さに「padding」を含めることができる。 */
   box-sizing: border-box;
-  /* 「justify-content」を使うために */
   display: flex;
-  /* 縦を真ん中に */
   justify-content: center;
-  /* 横も真ん中に */
   align-items: center;
-  /* 「display: flex」で横並びになるのを防ぐ */
   flex-direction: column;
 }
 
-.ask .ask-title {
+.first-view .container .first-view-title {
   height: 150px;
   padding-bottom: 40px;
 }
 
-.ask .ask-info {
-  text-align: center;
-  padding-bottom: 40px;
-  margin-top: 50px;
-}
-
-.ask .ask-info .ask-br {
-  display: none;
-}
-
-.ask .ask-list {
+.first-view .container .first-view-info {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 40px;
 }
 
-.ask .ask-list li {
+.first-view .container .first-view-list {
+  border-top: 1px solid;
+  padding: 0 30px 0 30px;
+}
+
+.first-view .container .first-view-list .pc-none,
+.first-view .container .first-view-info .pc-none {
+  display: none;
+}
+
+.first-view .container .first-view-list {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.first-view .container .first-view-list li {
   padding-bottom: 7px;
 }
 
-.ask .ask-btn {
+.first-view .container .first-view-button {
   padding: 10px 56px;
-  border-radius: 19px;
+  border-radius: 9999px;
 }
 
 
@@ -357,14 +350,11 @@ img {
 }
 
 
-/* 1280で「headerのnavがおかしくなる」 */
-/* スクロールしてハンバーガーメニューに変わるのはjQueryが必要 */
 @media (max-width:1280px) {
 
   /* 全体 */
   .wrapper {
     max-width: 1280px;
-    /* 全体を真ん中に */
     margin: 0 auto;
   }
 
@@ -377,8 +367,7 @@ img {
   }
 
   /* ハンバーガーメニュー */
-  .menu-btn {
-    /* position: fixed; */
+  .menu-button {
     top: 10px;
     right: 10px;
     display: flex;
@@ -390,9 +379,9 @@ img {
     background-color: #fff;
   }
 
-  .menu-btn span,
-  .menu-btn span:before,
-  .menu-btn span:after {
+  .menu-button span,
+  .menu-button span:before,
+  .menu-button span:after {
     content: "";
     display: block;
     height: 3px;
@@ -402,29 +391,29 @@ img {
     position: absolute;
   }
 
-  .menu-btn span:before {
+  .menu-button span:before {
     bottom: 8px;
   }
 
-  .menu-btn span:after {
+  .menu-button span:after {
     top: 8px;
   }
 
-  #menu-btn-check:checked~.menu-btn span {
+  #menu-button-check:checked~.menu-button span {
     background-color: rgba(255, 255, 255, 0);
   }
 
-  #menu-btn-check:checked~.menu-btn span::before {
+  #menu-button-check:checked~.menu-button span::before {
     bottom: 0;
     transform: rotate(45deg);
   }
 
-  #menu-btn-check:checked~.menu-btn span::after {
+  #menu-button-check:checked~.menu-button span::after {
     top: 0;
     transform: rotate(-45deg);
   }
 
-  #menu-btn-check {
+  #menu-button-check {
     display: none;
   }
 
@@ -480,20 +469,16 @@ img {
     top: 16px;
   }
 
-  #menu-btn-check:checked~.menu-content {
+  #menu-button-check:checked~.menu-content {
     left: 0;
   }
 }
 
-@media (max-width:1000px) {}
-
-/* ここから文の改行等を入れる */
 @media (max-width:850px) {
 
   /* 全体 */
   .wrapper {
     max-width: 800px;
-    /* 全体を真ん中に */
     margin: 0 auto;
   }
 
@@ -515,24 +500,18 @@ img {
     height: 50%;
   }
 
-  /* ask */
-  /* 画像を中心から取り出す */
-  .ask {
+  .first-view .container {
     background-position: center;
     height: 550px;
   }
 
-  .ask-title img {
+  .first-view .container .first-view-title img {
     height: 100%;
     padding: 10px 10px 20px 10px;
   }
 
-  hr {
-    width: 280px;
-  }
-
-  .ask-info .ask-br {
-    /* 1440px時の「display:none」を解除して改行させる */
+  .first-view .container .first-view-list .pc-none,
+  .first-view .container .first-view-info .pc-none {
     display: block;
   }
 
