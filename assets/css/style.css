@@ -13,6 +13,7 @@ body {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 .button {
@@ -35,7 +36,7 @@ img {
 
 
 /* header */
-.header .header-wrapper {
+.header .container {
   padding: 25px 15px;
   background-color: #fff;
   display: flex;
@@ -88,38 +89,42 @@ img {
   flex-direction: column;
 }
 
-.first-view .container .first-view-title {
+.first-view .first-view-title {
   height: 150px;
   padding-bottom: 40px;
 }
 
-.first-view .container .first-view-info {
+/* .first-view .first-view-title img {
+  margin-bottom: 40px;
+} */
+
+.first-view .first-view-info {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 40px;
 }
 
-.first-view .container .first-view-list {
+.first-view .first-view-list {
   border-top: 1px solid;
   padding: 0 30px 0 30px;
 }
 
-.first-view .container .first-view-list .pc-none,
-.first-view .container .first-view-info .pc-none {
+.first-view .first-view-list .pc-none,
+.first-view .first-view-info .pc-none {
   display: none;
 }
 
-.first-view .container .first-view-list {
+.first-view .first-view-list {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 40px;
 }
 
-.first-view .container .first-view-list li {
+.first-view .first-view-list li {
   padding-bottom: 7px;
 }
 
-.first-view .container .first-view-button {
+.first-view .first-view-button {
   padding: 10px 56px;
   border-radius: 9999px;
 }
@@ -194,20 +199,15 @@ img {
 
 .curriculum .common-subtitle {
   font-size: 28px;
-  /* 「align-items: center」と「justify-content: center」を使うために */
   display: flex;
-  /* 線を上下の真ん中に */
   align-items: center;
-  /* 線を左右の真ん中に */
   justify-content: center;
   margin-bottom: 30px;
 }
 
 .curriculum .common-subtitle::before {
   border-top: 1px solid;
-  /* contentの初期設定(表示にはコンテントが必ず必要)*/
   content: "";
-  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
   flex-grow: 1;
   margin-right: 1em;
   color: #dcdcdc;
@@ -215,9 +215,7 @@ img {
 
 .curriculum .common-subtitle::after {
   border-top: 1px solid;
-  /* contentの初期設定(表示にはコンテントが必ず必要)*/
   content: "";
-  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
   flex-grow: 1;
   margin-left: 1em;
   color: #dcdcdc;
@@ -232,6 +230,10 @@ img {
 
 .curriculum .recommend-mass .recommend-img {
   width: 31.5%;
+}
+
+.curriculum .recommend-mass .recommend-img img {
+  height: 192px;
 }
 
 .curriculum .recommend-mass p {
@@ -253,7 +255,6 @@ img {
 .curriculum .language-mass img {
   width: 142px;
   height: 200px;
-  /* 画像を要素の真ん中に */
   margin-left: 27%;
   margin-bottom: 20px;
 }
@@ -261,13 +262,12 @@ img {
 
 
 /* course */
-
 .course {
   background-image: url(../img/section4-bg.jpg);
   padding-bottom: 70px;
 }
 
-.course-wrapper {
+.course .container {
   width: 980px;
   margin: 0 auto;
 }
@@ -280,7 +280,6 @@ img {
 .course .course-detail {
   height: 255px;
   width: 480px;
-  /* margin-bottom: 25px; */
 }
 
 .course .course-detail .course-margin {
@@ -358,11 +357,11 @@ img {
     margin: 0 auto;
   }
 
-  .header-wrapper nav {
+  .header nav {
     display: none;
   }
 
-  .header-wrapper ul {
+  .header ul {
     display: block;
   }
 
@@ -472,6 +471,8 @@ img {
   #menu-button-check:checked~.menu-content {
     left: 0;
   }
+
+
 }
 
 @media (max-width:850px) {
@@ -482,16 +483,19 @@ img {
     margin: 0 auto;
   }
 
+  .container {
+    width: 320px;
+  }
 
 
   /* ヘッダー */
-  .header-wrapper a img {
+  .header a img {
     width: 100px;
     height: 20px;
     margin-left: 10px;
   }
 
-  .header-wrapper nav {
+  .header nav {
     display: none;
   }
 
@@ -505,13 +509,13 @@ img {
     height: 550px;
   }
 
-  .first-view .container .first-view-title img {
+  .first-view .first-view-title img {
     height: 100%;
     padding: 10px 10px 20px 10px;
   }
 
-  .first-view .container .first-view-list .pc-none,
-  .first-view .container .first-view-info .pc-none {
+  .first-view .first-view-list .pc-none,
+  .first-view .first-view-info .pc-none {
     display: block;
   }
 
@@ -532,41 +536,35 @@ img {
 
   /* thought  */
 
-  /* curriculum  */
-  .curriculum .recommend-mass,
-  .curriculum .language-mass {
-    width: 310px;
-  }
 
+  /* curriculum  */
   .curriculum .recommend-mass .recommend-collection {
     display: block;
+    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 30px;
+  }
+
+  .curriculum .recommend-mass .recommend-img {
+    width: 310px;
+    margin: 0 auto 30px auto;
   }
 
   .curriculum .language-mass .language-collection {
     display: block;
+    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 30px;
   }
 
-
+  /* 6/17ここまで */
+  .curriculum .language-mass .language-img {
+    width: 0;
+  }
 
   /* course */
   .course .course-mass {
     display: block;
+    justify-content: space-between;
   }
-
-  /* .course-wrapper {
-    width: 320px;
-    margin: 0 auto;
-  }
-
-
-  .course .course-detail {
-    width: 100%;
-    height: 170px;
-  }
-
-  .course .course-content p {
-    word-wrap: break-word;
-  } */
 }
