@@ -7,11 +7,11 @@ body {
   line-height: 1.8;
 }
 
-/* global */
 img {
   width: 100%;
 }
 
+/* global */
 .button {
   border-radius: 9999px;
   background-color: orange;
@@ -21,13 +21,18 @@ img {
 
 
 /* local */
-.common-title {
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.common-heading {
   padding-top: 60px;
   padding-bottom: 50px;
   text-align: center;
 }
 
-.common-title h2 {
+.common-heading h2 {
   font-size: 37px;
   padding-bottom: 5px;
 }
@@ -39,17 +44,23 @@ img {
 }
 
 .common-width {
-  width: 310px;
+  max-width: 310px;
   height: auto;
   margin: 15px 10px 15px 10px;
 }
 
-.common-img {
+.common-image {
   text-align: center;
   margin-bottom: 15px;
 }
 
 /* header */
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+
 .header .container {
   padding: 25px 15px;
   background-color: #fff;
@@ -61,22 +72,16 @@ img {
 
 .header .header-logo {
   width: 100px;
-  height: 20px;
-  margin-left: 10%;
-}
-
-.header nav {
-  margin-right: 9%;
+  line-height: 1;
 }
 
 .header nav ul {
-  padding-left: 50px;
   display: flex;
+  line-height: normal;
 }
 
 .header nav li {
   padding: 8px 10px;
-  margin-right: 10px;
 }
 
 /* hamburger-menu */
@@ -87,33 +92,36 @@ img {
 
 
 /* first-view */
-.first-view .container {
+.first-view {
   background-image: url(../img/first-view.jpg);
   background-size: cover;
-  height: 600px;
   color: #fff;
   box-sizing: border-box;
+}
+
+.first-view .container {
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.first-view .title img {
+.first-view .hedding img {
   height: 150px;
-  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .first-view .info {
   text-align: center;
-  padding-bottom: 40px;
-  /* 2行追加 */
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .first-view .list {
   border-top: 1px solid;
-  padding: 0 30px 0 30px;
+  text-align: center;
+  padding: 40px 30px 20px;
+  margin-top: 50px;
 }
 
 .first-view .list .pc-none,
@@ -121,18 +129,13 @@ img {
   display: none;
 }
 
-.first-view .list {
-  text-align: center;
-  padding-top: 40px;
-  margin-bottom: 40px;
-}
-
-.first-view .list li {
-  padding-bottom: 7px;
+.first-view .breadth-top~li {
+  padding-top: 7px;
 }
 
 .first-view .first-view-button {
   padding: 10px 56px;
+  margin-top: 40px;
 }
 
 
@@ -144,7 +147,7 @@ img {
   padding-bottom: 30px;
 }
 
-.feature .feature-mass img {
+.feature .mass img {
   width: 200px;
   height: 200px;
 }
@@ -167,13 +170,13 @@ img {
   padding-bottom: 20px;
 }
 
-.thought .thought-mass {
+.thought .mass {
   width: 600px;
   height: 475px;
   margin: 0 auto 0 auto;
 }
 
-.thought .thought-mass p:not(:last-child) {
+.thought .mass p:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -182,7 +185,7 @@ img {
   margin: 0 auto;
 }
 
-.curriculum .common-subtitle {
+.curriculum .common-subheading {
   font-size: 28px;
   display: flex;
   align-items: center;
@@ -190,7 +193,7 @@ img {
   margin-bottom: 30px;
 }
 
-.curriculum .common-subtitle::before {
+.curriculum .common-subheading::before {
   border-top: 1px solid;
   content: "";
   flex-grow: 1;
@@ -199,7 +202,7 @@ img {
   color: #dcdcdc;
 }
 
-.curriculum .common-subtitle::after {
+.curriculum .common-subheading::after {
   border-top: 1px solid;
   content: "";
   flex-grow: 1;
@@ -208,21 +211,21 @@ img {
   color: #dcdcdc;
 }
 
-.curriculum .recommend-mass img {
+.curriculum .mass img {
   height: auto;
 }
 
-.curriculum .recommend-mass p {
+.curriculum .mass p {
   font-size: 23px;
   text-align: center;
 }
 
-.curriculum .language-mass img {
+.curriculum .mass img {
   width: 142px;
   height: 200px;
 }
 
-.curriculum .language-mass p {
+.curriculum .mass p {
   border-top: solid 1px #dcdcdc;
   padding: 10px 0 0 0;
 }
@@ -232,6 +235,7 @@ img {
 /* course */
 .course {
   background-image: url(../img/section4-bg.jpg);
+  background-size: cover;
   padding-bottom: 70px;
 }
 
@@ -240,7 +244,7 @@ img {
   margin: 0 auto;
 }
 
-.course .course-mass {
+.course .mass {
   display: flex;
   justify-content: space-between;
 }
@@ -258,7 +262,7 @@ img {
 
 .course .course-detail h5 {
   display: inline-block;
-  padding: 5px;
+  margin-bottom: 5px;
   font-size: 24px;
   background-color: orange;
 }
@@ -288,10 +292,9 @@ img {
 
 .course .course-content {
   width: 480px;
-  height: 150px;
   margin-bottom: 40px;
   padding: 20px 10px 10px 10px;
-  overflow: auto;
+  height: 12.4em;
 }
 
 .line {
@@ -315,13 +318,62 @@ img {
   padding: 10px 10px 10px 20px;
 }
 
+/* teacher */
+.teacher {
+  display: flex;
+}
 
-@media (max-width:1280px) {
+/* コース部分部分を縦にする */
+@media (max-width:1150px) {
+
+  /* course */
+  .course .container {
+    width: 480px;
+  }
+
+  .course .mass {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .course .course-content {
+    width: auto;
+    margin-bottom: 26px;
+    height: 12.4em;
+  }
+
+  .course .course-condition {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width:980px) {
 
   /* base */
-  .wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
+  .wrapper {}
+
+
+
+  /* local */
+  .container {
+    /* width: 320px;
+    margin: 0 auto; */
+  }
+
+  .common-collection {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .common-width {
+    margin: 0 auto 50px auto;
+  }
+
+  /* ヘッダー */
+  .header {
+    width: auto;
   }
 
   .header nav {
@@ -332,10 +384,31 @@ img {
     display: block;
   }
 
+  .header a img {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .menu-content {
+    width: 70%;
+    height: 50%;
+  }
+
   /* ハンバーガーメニュー */
+  .header .container {
+    /* ヘッダーの位置を固定する場合はこいつを削除 */
+    display: flex;
+  }
+
   .menu-button {
-    top: 10px;
-    right: 10px;
+    /* position: fixed;
+      top: 10px;
+      right: 10px; */
     display: flex;
     height: 40px;
     width: 60px;
@@ -382,65 +455,15 @@ img {
   #menu-button-check {
     display: none;
   }
-}
-
-/* コース部分部分を縦にする */
-@media (max-width:1150px) {
-
-  /* course */
-  .course .container {
-    width: 480px;
-  }
-
-  .course .course-mass {
-    display: block;
-    justify-content: space-between;
-  }
-
-  .course .course-condition {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width:850px) {
-
-  /* base */
-  .wrapper {}
-
-  /* local */
-  .common-collection {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .common-width {
-    margin: 0 auto 50px auto;
-  }
-
-  /* ヘッダー */
-  .header a img {
-    width: 100px;
-    height: 20px;
-    margin-left: 10px;
-  }
-
-  .header nav {
-    display: none;
-  }
-
-  .menu-content {
-    width: 70%;
-    height: 50%;
-  }
 
   .first-view .container {
     background-position: center;
-    height: 550px;
+    height: 570px;
   }
 
-  .first-view .title img {
+  .first-view .heading img {
     height: 100%;
-    padding: 10px 10px 20px 10px;
+    padding: 5px;
   }
 
   .first-view .list .pc-none,
@@ -448,27 +471,42 @@ img {
     display: block;
   }
 
+  .first-view .info {
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .first-view .list {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .first-view .first-view-button {
+    padding: 10px 56px;
+    margin-top: 20px;
+  }
+
   /* thought  */
   .thought {
     height: auto;
   }
 
-  .thought .thought-mass {
+  .thought .mass {
     width: auto;
     height: auto;
     padding: 10px;
   }
 
-  .thought .thought-mass p:not(:last-child) {
+  .thought .mass p:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .thought .thought-mass .pc-width:not(:last-child) {
-    margin-bottom: 15px;
+  .thought .mass .pc-width:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   /* feature */
-  .feature .feature-mass img {
+  .feature .mass img {
     width: 150px;
     height: 150px;
   }
@@ -478,24 +516,24 @@ img {
     padding-bottom: 30px;
   }
 
-  .curriculum .common-subtitle::before {
+  .curriculum .common-subheading::before {
     margin-right: 3%;
     margin-left: 0;
   }
 
-  .curriculum .common-subtitle::after {
+  .curriculum .common-subheading::after {
     margin-right: 0;
     margin-left: 3%;
   }
 
-  .curriculum .recommend-mass img {
+  .curriculum .mass img {
     width: 225px;
     height: auto;
   }
 
-  .curriculum .language-mass img {
-    width: 142px;
-    height: 200px;
+  .curriculum .mass img {
+    width: 107px;
+    height: auto;
   }
 
   /* course */
@@ -504,16 +542,31 @@ img {
   }
 
   .course .course-detail {
-    width: 300px;
-    height: auto;
+    width: 310px;
+    height: 166px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: 1.5;
   }
 
   .course .course-content {
     width: auto;
-    height: auto;
+    margin-bottom: 26px;
+    height: 16.4em;
   }
 
 
+  .course .course-detail h5 {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 5px;
+  }
 
+  .course .course-detail p {
+    line-height: 1.5;
+  }
 
+  .course .course-detail p span {
+    font-size: 16px;
+  }
 }
