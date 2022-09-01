@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/* 全体・共通部分 */
+
+body {
+  /* 初期値を０に */
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1440px;
+  /* 全体を真ん中に */
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: orange;
+  color: #fff;
+  font-weight: bold;
+}
+
+.common-title {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.common-title h2 {
+  font-size: 37px;
+  padding-bottom: 5px;
+}
+
+
+
+/* header */
+
+.header .header-wrapper {
+  padding: 25px 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.header a img {
+  width: 100px;
+  height: 20px;
+  margin-left: 125px;
+}
+
+.header nav ul {
+  padding-left: 50px;
+  display: flex;
+  margin-right: 100px;
+}
+
+.header nav li {
+  padding: 8px 10px;
+  margin-right: 10px;
+}
+
+.header nav li:last-child {
+  border-radius: 10px;
+  background-color: orange;
+  color: #fff;
+  /* margin-right: 125px; */
+  font-weight: bold;
+}
+
+
+
+
+/* ask */
+
+.ask {
+  background-image: url(../img/first-view.jpg);
+  /* 自動的にボックスに合わせた大きさにし絵切り出す */
+  background-size: cover;
+  height: 600px;
+  color: #fff;
+  /* 下記を記述することで高さに「padding」を含めることができる。 */
+  box-sizing: border-box;
+  /* 「justify-content」を使うために */
+  display: flex;
+  /* 縦を真ん中に */
+  justify-content: center;
+  /* 横も真ん中に */
+  align-items: center;
+  /* 「display: flex」で横並びになるのを防ぐ */
+  flex-direction: column;
+}
+
+.ask .ask-title {
+  height: 150px;
+  padding-bottom: 40px;
+}
+
+.ask .ask-info {
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 50px;
+}
+
+.ask .ask-info .ask-br {
+  display: none;
+}
+
+.ask .ask-list {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ask .ask-list li {
+  padding-bottom: 7px;
+}
+
+.ask .ask-btn {
+  padding: 10px 56px;
+}
+
+
+
+
+/* feature */
+.feature {
+  background-color: #f2faff;
+  padding-bottom: 30px;
+}
+
+.feature .feature-mass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-detail {
+  width: 310px;
+  margin: 0 20px 20px 20px;
+}
+
+.detail-left {
+  margin-left: 10%;
+}
+
+.detail-right {
+  margin-right: 10%;
+}
+
+.feature .feature-mass .feature-img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px auto;
+
+}
+
+.feature .feature-mass h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* thought */
+.thought {
+  height: 730px;
+  color: #fff;
+  background-image: url(../img/section2-bg.jpg);
+  background-size: cover;
+}
+
+.thought .thought-mass {
+  width: 600px;
+  height: 475px;
+  margin: 0 auto 0 auto;
+}
+
+.thought .thought-mass .thought-sentence:not(:last-child) {
+  margin-bottom: 65px;
+}
+
+
+
+/* curriculum */
+.curriculum {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.curriculum .common-subtitle {
+  font-size: 28px;
+  /* 「align-items: center」と「justify-content: center」を使うために */
+  display: flex;
+  /* 線を上下の真ん中に */
+  align-items: center;
+  /* 線を左右の真ん中に */
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.curriculum .common-subtitle::before {
+  border-top: 1px solid;
+  /* contentの初期設定(表示にはコンテントが必ず必要)*/
+  content: "";
+  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
+  flex-grow: 1;
+  margin-right: 1em;
+  color: #dcdcdc;
+}
+
+.curriculum .common-subtitle::after {
+  border-top: 1px solid;
+  /* contentの初期設定(表示にはコンテントが必ず必要)*/
+  content: "";
+  /* フレックスアイテムの伸び率を指定する。1とすると横幅いっぱいに広がる。 */
+  flex-grow: 1;
+  margin-left: 1em;
+  color: #dcdcdc;
+}
+
+.curriculum .recommend-mass .recommend-collection {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.curriculum .recommend-mass .recommend-img {
+  width: 31.5%;
+}
+
+.curriculum .recommend-mass p {
+  font-size: 23px;
+  text-align: center;
+}
+
+.curriculum .language-mass .language-collection {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.curriculum .language-mass .language-img {
+  width: 31.5%;
+}
+
+.curriculum .language-mass img {
+  width: 142px;
+  height: 200px;
+}
+
+/* .curriculum .language-mass img {
+  width: 142px;
+  height: 200px;
+} */
+
+/* .curriculum .language-mass p {
+  text-align: center;
+} */
+
+/* 1280で「headerのnavがおかしくなる」 */
+/* スクロールしてハンバーガーメニューに変わるのはjQueryが必要 */
+@media (max-width:1280px) {
+
+  /* 全体 */
+  .wrapper {
+    max-width: 1280px;
+    /* 全体を真ん中に */
+    margin: 0 auto;
+  }
+}
+
+
+
+/* ここから文の改行等を入れる */
+@media (max-width:850px) {
+
+
+
+  /* 全体 */
+  .wrapper {
+    max-width: 800px;
+    /* 全体を真ん中に */
+    margin: 0 auto;
+  }
+
+
+
+  /* ヘッダー */
+  .header-wrapper a img {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .header-wrapper ul {
+    padding-left: 50px;
+    display: flex;
+    margin-right: 10px;
+  }
+
+
+
+  /* ask */
+  /* 画像を中心から取り出す */
+  .ask {
+    background-position: center;
+    height: 550px;
+  }
+
+  .ask-title img {
+    height: 100%;
+    padding: 10px 10px 20px 10px;
+  }
+
+  hr {
+    width: 280px;
+  }
+
+  .ask-info .ask-br {
+    /* 1440px時の「display:none」を解除して改行させる */
+    display: block;
+  }
+
+
+
+
+  /* feature */
+  .feature-mass {
+    display: block;
+    word-break: break-all;
+  }
+
+  .feature-detail {
+    width: 310px;
+    margin: 0 auto 30px auto;
+  }
+
+
+}
