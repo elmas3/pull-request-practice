@@ -1,3 +1,0 @@
-안녕하세요. 한국에서 이책을 읽으며 git을 연습하고 있습니다. 잘부탁드립니다.
-こんにちは。韓国でこの本を読みながらgitを練習しています。よろしくお願いします。
-Hello. I am reading this book and practicing how to use git. Please be nice to me!
