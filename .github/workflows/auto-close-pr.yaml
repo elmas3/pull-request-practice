@@ -11,5 +11,9 @@ jobs:
     - uses: superbrothers/close-pull-request@v3
       with:
         # Optional. Post a issue comment just before closing a pull request.
-        comment: "プルリクエストありがとうございます。現在多数のプルリクをいただいているため、セキュリティ上の理由によりマージすることができません。そのため自動でクローズさせていただいております。何卒ご了承ください。"
+        comment: "プルリクエストありがとうございます👏
+現在たくさんのプルリクをいただいているため、セキュリティ上の理由によりマージすることができません。そのため自動でクローズさせていただきますね😄
+ぜひ、何度でも練習してください🎵
+
+📝エルマスより"
 
