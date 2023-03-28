@@ -1,0 +1,19 @@
+name: Close Pull Request
+
+on:
+  pull_request_target:
+    types: [opened]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: superbrothers/close-pull-request@v3
+      with:
+        # Optional. Post a issue comment just before closing a pull request.
+        comment: "プルリクエストありがとうございます👏
+現在たくさんのプルリクをいただいているため、セキュリティ上の理由によりマージすることができません。そのため自動でクローズさせていただきますね😄
+ぜひ、何度でも練習してください🎵
+
+📝エルマスより"
+
