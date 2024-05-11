@@ -1,3 +1,5 @@
+# TIP for pro pull request : feat(....) | fix(....) | doc(....)
+
 # pull-request-practice
 
 - これは書籍[「わかばちゃんと学ぶGit使い方入門」](https://amzn.to/2GfKnnd)のプルリクエスト練習用リポジトリです。
