@@ -6,3 +6,5 @@ bluetortoise.txt
 .txt
 *.sw?
 memo.txt
+
+/log/
