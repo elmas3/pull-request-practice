@@ -1,0 +1,1 @@
+EVENTCREATE /ID 999 /L application /SO sys_test /T ERROR /D "てすと！"
